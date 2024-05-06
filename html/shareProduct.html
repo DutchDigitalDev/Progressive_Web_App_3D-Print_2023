@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- Meta tag for device width -->
+    <meta name="description" content="3D printing for Everyone" /><!-- Meta tag for page description -->
+    <meta name="author" content="Victor Roestenberg" /><!-- Meta tag for author -->
+    <meta name="keywords" content="3D, 3Dprinting" /><!-- Meta tag for keywords -->
+    <link rel="manifest" href="../manifest.json" /><!-- Link to manifest for browser (app) settings -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" /><!--Bootstrap CSS link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" defer></script><!-- Bootstrap JS dependencies (Popper.js) from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" defer></script><!-- Bootstrap JS from CDN -->
+    <script src="..\js\script.js" defer></script><!-- Script link for User interface script(s)  (Defer until app-shell is fully loaded)-->
+    <script src="../js/jquery-2.2.4.min.js" defer></script>
+    <script src="../js/share.js" defer></script>
+    <link rel="stylesheet" href="..\css\style.css" /><!-- Link to App-shell Styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><!--link voor Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><!--link voor Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" /><!--link voor Google font -->
+    <title>MDEV Example PWA</title>
+</head>
+
+<body>
+    <header>
+        <section class="container-fluid text-center p-0">
+            <nav class="navS">
+                <section class="hamburger-menu" onclick="toggleMenu()">&#9776;</section>
+                <ul>
+                    <li><a href="../../index.html"><img src="../img/svg/Menu_Home_Icon.svg" alt="Home icon" /></a></li>
+                    <li><a href="../html/profile.html"><img src="../img/svg/Menu_Profile_Icon.svg"
+                                alt="Profile icon" /></a></li>
+                    <li><a href="../html/addProduct.html"><img src="../img/svg/Menu_Add_Product.svg"
+                                alt="Add product icon" /></a></li>
+                    <li><a href="../html/search.html"><img src="../img/svg/Menu_Search_Icon.svg"
+                                alt="Search icon" /></a></li>
+                </ul>
+            </nav>
+            <img src="../img/svg/General_Return_Button.svg" alt="Return button" id="returnButton">
+            <img src="../img/svg/3DPE_Logo.svg" alt="3DPE logo" id="headerLogo3DPE" />
+        </section>
+    </header>
+
+    <main class="pCenter">
+        <h2 class="pageTitle">Share a model on social media.</h2>
+        <p>If you’re looking to share a model on social media you are in the right place! Choose the files and links you
+            would like to share down here.</p>
+        <hr>
+        <section id="addModels">
+            <img src="..\img\Benchy_img.jpg" alt="Benchy image">
+            <img src="..\img\Benchy_img.jpg" alt="Benchy image">
+        </section>
+
+        <h2 class="pageTitle">Share 3D model using,</h2>
+
+        <section class="share-icons">
+            <section>
+                <a id="XShare" href="#">
+                    <img width="50" height="50" src="..\img\svg\share_socials\X_socials_Icon.svg" title="X" />
+                </a>
+            </section>
+
+            <section>
+                <a id="FacebookShare" href="#">
+                    <img width="50" height="50" src="..\img\svg\share_socials\Facebook_Socials_Icon.svg"
+                        title="Facebook" />
+                </a>
+            </section>
+
+            <section>
+                <a id="InstagramShare" href="#">
+                    <img width="50" height="50" src="..\img\svg\share_socials\Instagram_Socials_Icon.svg"
+                        title="Instagram" />
+                </a>
+            </section>
+
+            <section>
+                <a id="TiktokShare" href="#">
+                    <img width="50" height="50" src="..\img\svg\share_socials\Tiktok_Socials_Icon.svg" title="Tiktok" />
+                </a>
+            </section>
+
+            <section>
+                <a id="PinterestShare" href="#">
+                    <img width="50" height="50" src="..\img\svg\share_socials\Pinterest_Socials_Icon.svg"
+                        title="Pinterest" />
+                </a>
+            </section>
+
+            <section>
+                <a id="WhatsappShare" href="#">
+                    <img width="50" height="50" src="..\img\svg\share_socials\Whatsapp_Socials_Icon.svg"
+                        title="Whatsapp" />
+                </a>
+            </section>
+        </section>
+    </main>
+
+    <footer class="d-flex align-items-center justify-content-center">
+        <p class="mb-0">3DPDE | Produced by DutchDigitalDev.nl</p>
+    </footer>
+
+</body>
+
+</html>

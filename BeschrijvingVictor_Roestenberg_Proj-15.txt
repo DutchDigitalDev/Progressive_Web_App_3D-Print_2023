@@ -1,0 +1,16 @@
+Naam: Victor Roestenberg
+Project: 15
+
+PWA beschrijving:
+
+Mijn PWA is een PWA voor mensen die 3D printen en dus 3D print files met elkaar willen delen. Vandaar voor mij ook de functies Camera en Share. Verder werkt het Manifest en de serviceworker. Er zit geen Static_Cache in deze PWA verwerkt. Deze PWA is geen one-pager en heeft dus meerdere pagina's die te bezoeken zijn door middel van het menu. Er zijn verschillende JS files terug te vinden om de functies van deze scripts goed uit elkaar te houden. Als er bij de home page op de producten wordt geklikt en vervolgens op download wordt geklikt komt er een extra notificatie.
+
+Projecteisen 15:
+
+Desktop versie,
+- Menubalk verticaal aan de linker kant.
+- 2 columns naast elkaar
+
+Mobile versie,
+- Menubalk verticaal aan de rechter kant.
+- 1 Column (row)

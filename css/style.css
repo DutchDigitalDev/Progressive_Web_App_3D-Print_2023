@@ -1,0 +1,1032 @@
+/* Start CSS RESET - to turn off all embedded browser styling */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End CSS RESET - to turn off all embedded browser styling */
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/* START MOBILE FIRST - general styling (oftewel standaard huisstijl) */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+/* Start Mobile Nav */
+.hamburger-menu {
+    top: 8px;
+    right: 0;
+    font-size: 27px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+}
+
+.navS ul {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    border-radius: 0px 0px 0px 8px;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    width: 50px;
+    background-color: #FFA63D;
+    height: 100%;
+    list-style: none;
+    z-index: 1;
+}
+
+.navS ul.show {
+    max-height: 100%;
+}
+
+.navS li {
+    margin-top: 55px;
+}
+
+/* End Mobile Nav */
+
+
+/* Start General Styling Mobile */
+body {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8em;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 4vw;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+h2::first-letter {
+    color: #D8882B;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* End General Styling Mobile*/
+
+
+/* start Mobile Profile page styling */
+#profcon {
+    width: 100%;
+    background-color: #101010;
+    padding-top: 2px;
+    overflow: hidden;
+}
+
+#profinf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#profImage {
+    width: 80px;
+    border-radius: 9px;
+    border: 2px solid;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#profimgbg {
+    width: 180px;
+}
+
+.iconrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.profstatsbg {
+    width: 50px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: white;
+    margin: 10px;
+}
+
+.profstatsbg span {
+    color: #D8882B;
+    font-weight: bold;
+}
+
+.proficons {
+    width: 20px;
+}
+
+
+/* End Mobile profile Page styling*/
+
+
+
+
+/* Start Mobile product page */
+.pageTitle {
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 40px;
+
+}
+
+.productView {
+    background-color: #191919;
+    border-radius: 9px;
+    width: 90%;
+}
+
+.productImageP {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.productImageE {
+    width: 30%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#downbg {
+    width: 100%;
+    height: 60px;
+    background-color: #D8882B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#downbg button {
+    font-size: 1.2rem;
+    width: 75%;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sharebg {
+    width: 100%;
+    height: 60px;
+    background-color: #5662F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sharebg button {
+    font-size: 1.2rem;
+    width: 75%;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+#folbg {
+    width: 100%;
+    height: 60px;
+    background-color: #D8882B;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    align-items: center;
+}
+
+#folbg button {
+    font-size: 1.2rem;
+    width: 50%;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* End Mobile product page */
+
+/* Start Mobile Product share page*/
+
+
+.pCenter {
+    text-align: center;
+}
+
+.pCenter p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.pCenter hr {
+    border: 2.5px solid #ffffff;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 1;
+
+}
+
+section.share-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 280px;
+}
+
+section.share-icons a {
+    display: inline-block;
+
+}
+
+#addModels {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#addModels img {
+    width: 38%;
+    margin: 4px;
+    border-radius: 6px;
+}
+
+
+/* End Mobile Product share page*/
+
+
+
+/* Start Mobile add product page styling */
+
+#stepscon {
+    text-align: center;
+
+}
+
+#stepscon h4 {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.stepsbg {
+    width: 100%;
+    background-color: #101010;
+    padding-top: 2px;
+    overflow: hidden;
+}
+
+
+#selfieBtn,
+#pickImgBtn {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #5662F6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 39%;
+}
+
+
+canvas,
+video {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#btnEnableNotifications {
+    display: none;
+}
+
+#secSelfie {
+    display: none;
+}
+
+#captureBtn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #5662F6;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    margin: 10px;
+}
+
+#pickImage {
+    display: none;
+}
+
+#pickButton {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #5662F6;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    margin: 10px;
+}
+
+#selboxxes {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.selBox {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+#desArea {
+    width: 80%;
+    height: 140px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid white;
+    background-color: #101010;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+#addButton {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 3px solid white;
+    color: #fff;
+    background-color: #5662F6;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* End Mobile add product page styling */
+
+
+
+
+/* Start Mobile search page styling */
+
+.searchBarCon {
+    height: 118px;
+    background-color: #101010;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#searchBar {
+    position: absolute;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    margin-top: 70px;
+    width: 90%;
+    text-align: center;
+}
+
+
+.searchButtons button {
+    font-weight: 0;
+    font-size: 1.2rem;
+    height: 65px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    color: #fff;
+    background-color: #101010;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* End Mobile search page styling */
+
+
+
+
+/* Start Mobile index styling */
+
+#btnEnableNotifications {
+    left: 10px;
+    top: 45vw;
+    background-color: #5662F6;
+    color: white;
+    border: none;
+    display: none;
+    padding: 8px;
+    position: absolute;
+    z-index: 3;
+    border-radius: 6px;
+}
+
+#headerLogo3DPE {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10px;
+    height: 5vw;
+    z-index: 1;
+}
+
+#returnButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+#headerImgCon {
+    width: 100%;
+    position: relative;
+}
+
+#headerImgCon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(10, 10, 10);
+    background: linear-gradient(0deg, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 1) 12%, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 1) 88%, rgba(10, 10, 10, 1) 100%);
+}
+
+#headerImg {
+    width: 100%;
+}
+
+
+#orange-text {
+    color: #FFA63D;
+}
+
+#red-text {
+    color: #D8542B;
+}
+
+.aboutUsCon {
+    background-color: #191919;
+    padding: 10px;
+}
+
+.aboutUsText {
+    width: 85%;
+    margin: auto;
+}
+
+.featuredModels {
+    margin: auto;
+    width: 90%;
+}
+
+.featModText {
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.productSelect {
+    background-color: #191919;
+    border-radius: 9pt;
+}
+
+.productSelect h4 {
+    margin: 10px;
+}
+
+.productSelect p {
+    justify-self: center;
+    margin: 10px;
+}
+
+.profileImg {
+    float: left;
+    width: 11vw;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.ProdProfileName {
+    float: left;
+    margin: 14px;
+    font-size: 7vw;
+}
+
+.productImage {
+    width: 100%;
+    border-radius: 9pt;
+}
+
+.hr1 {
+    border: 2.5px solid #D8542B;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.hr2 {
+    border: 2.5px solid #FFA63D;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.fStatsbg {
+    width: 50px;
+    height: 20px;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.fStats {
+    color: #D8882B;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3366cc;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* End Mobile index styling */
+
+/*////////////////////////////////////////////////////////////////////*/
+/* START MOBILE FIRST - general styling (oftewel standaard huisstijl) */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////// TABLET VERSIE - ( GEEN TABLET VERSIE VOOR DIT PROJECT) //////*/
+/*////////////////////////////////////////////////////////////////////*/
+/* TABLET - (Geen tablet styling voor dit project) */
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/* START DESKTOP VERSIE - General styling dat benodigd is (desktop)   */
+/*////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 426px) {
+
+    /* Start Desktop Nav */
+    .hamburger-menu {
+        top: 8px;
+        left: 0;
+        font-size: 44px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        width: 70px;
+        z-index: 2;
+    }
+
+    .navS ul {
+        position: absolute;
+        padding: 0;
+        top: 0;
+        left: 0;
+        border-radius: 0px 0px 8px 0px;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        width: 70px;
+        background-color: #5662F6;
+        height: 100%;
+        list-style: none;
+        z-index: 1;
+    }
+
+    .navS ul.show {
+        height: 60%
+    }
+
+    .navS li {
+        margin-top: 70px;
+    }
+
+    /* End Desktop Nav */
+
+
+    /* Start General Styling Desktop NOG AANPASSEN */
+    body {
+        background-color: #0a0a0a;
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 7rem;
+        font-weight: bold;
+        margin: 4vw;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    /* End General Styling Desktop*/
+
+    /* Start Desktop index styling */
+
+    #btnEnableNotifications {
+        left: 10px;
+        top: 670px;
+        background-color: #5662F6;
+        padding: 20px;
+    }
+
+    #headerLogo3DPE {
+        top: 25px;
+        height: 3vw;
+    }
+
+    #returnButton {
+        position: absolute;
+        width: 36px;
+        top: 13px;
+        left: auto;
+        right: 10px;
+        z-index: 1;
+    }
+
+    #headerImgCon {
+        position: relative;
+        height: 910px;
+        overflow: hidden;
+    }
+
+    .aboutUsCon {
+        width: 100%;
+    }
+
+    .aboutUsText {
+        width: 60%;
+        padding: 80px;
+    }
+
+    .featuredModels {
+        width: 60%;
+    }
+
+    .featModText {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .productSelect {
+        background-color: #191919;
+        border-radius: 9pt;
+        min-height: 600px;
+        max-height: 700px;
+    }
+
+    .productSelect h4 {
+        font-size: 1.8rem;
+    }
+
+    .productSelect p {
+        justify-self: center;
+        margin: 10px;
+    }
+
+    .profileImg {
+        float: left;
+        width: 3vw;
+    }
+
+    .ProdProfileName {
+        float: left;
+        margin: 14px;
+        font-size: 2vw;
+    }
+
+    .productImage {
+        width: 100%;
+        border-radius: 9pt;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #3366cc;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    /* End Desktop index styling */
+
+    /* Start Mobile product page */
+    .pageTitle {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+
+    .productView {
+        width: 60%;
+    }
+
+    .productImageE {
+        width: 32%;
+    }
+
+    /* End Mobile product page */
+
+
+    /* start Desktop Profile page styling */
+    #profcon {
+        height: 520px;
+    }
+
+    #profinf {
+        top: 40px;
+    }
+
+    #profImage {
+        width: 120px;
+        top: 18%;
+        left: 50%;
+    }
+
+    #profimgbg {
+        width: 300px;
+    }
+
+    .profstatsbg {
+        width: 65px;
+        height: 28px;
+        margin: 15px;
+    }
+
+    .profstatsbg span {
+        font-size: 1.4rem;
+    }
+
+    .proficons {
+        width: 25px;
+    }
+
+    /* End Desktop profile Page styling*/
+
+
+
+
+
+
+    /* Start Desktop Product share page*/
+
+
+    .pCenter {
+        text-align: center;
+    }
+
+    .pCenter p {
+        width: 65%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .pCenter hr {
+        border: 2.5px solid #ffffff;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        opacity: 1;
+
+    }
+
+    section.share-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 200px;
+        width: 100%;
+    }
+
+    section.share-icons a {
+        display: inline-block;
+
+    }
+
+    #addModels {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #addModels img {
+        width: 20%;
+        margin: 4px;
+        border-radius: 6px;
+    }
+
+    /* End Desktop Product share page*/
+
+
+
+
+    /* Start Desktop add product page styling */
+
+    #stepscon {
+        text-align: center;
+
+    }
+
+    #stepscon h4 {
+        text-align: center;
+        margin: 10px;
+        font-size: 1.1rem;
+        text-decoration: underline;
+    }
+
+    .stepsbg {
+        width: 100%;
+        background-color: #101010;
+        padding-top: 2px;
+        overflow: hidden;
+    }
+
+
+    #selfieBtn,
+    #pickImgBtn {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #5662F6;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 40%;
+    }
+
+
+    canvas,
+    video {
+        width: 65%;
+    }
+
+    #captureBtn {
+        width: 20%;
+    }
+
+    #pickImage {
+        display: none;
+    }
+
+    #pickButton {
+        width: 20%;
+    }
+
+    #selboxxes {
+        width: 65%;
+        height: 250px;
+    }
+
+    .selBox {
+        width: 65%;
+        height: 200px;
+    }
+
+    #desArea {
+        width: 65%;
+        height: 300px;
+    }
+
+    /* End Desktop add product page styling */
+
+
+
+    /* Start Desktop search page styling */
+
+    .searchBarCon {
+        height: 400px;
+    }
+
+    /* End Desktop search page styling */
+
+
+
+}
